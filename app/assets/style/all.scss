@@ -2,11 +2,27 @@
 
 $hfcolor:#AA0601;
 $hhcolor:#650300;
-
-
+html {
+    box-sizing: border-box;
+  }
+  *,*::before,*::after {
+    box-sizing: inherit;
+  }
+  
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+  
+}
 .header {
   background-color: $hfcolor;
-  .container{
+  height: 300px;
+  img{
+    width: 80px;
+    height: 49px;
+  }
+  .head{
           display: flex;
           justify-content: space-between;
 
@@ -19,17 +35,16 @@ $hhcolor:#650300;
 
 }
 
+
+
+
 .footer {
   background-color: $hfcolor;
   
 
-.container{
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 0 12px;
-  
 }
-}
+
+
 .box {
   width: 100px;
   height: 100px;
