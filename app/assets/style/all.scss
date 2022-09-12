@@ -1,58 +1,207 @@
-@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+@import "variable";
+@import "base";
+@import "layout";
+@import "page8";
 
-$hfcolor:#AA0601;
-$hhcolor:#650300;
-html {
-    box-sizing: border-box;
-  }
-  *,*::before,*::after {
-    box-sizing: inherit;
-  }
-  
-.container{
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 0 12px;
-  
+.subtitle2{
+    margin-top: 24px;
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    span{
+        color: $hfcolor;
+    }
+    .red{   
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: $hfcolor; 
+        padding: 8px 0;
+        padding-right: 15px;
+    }
 }
-.header {
-  background-color: $hfcolor;
-  height: 300px;
-  img{
-    width: 80px;
-    height: 49px;
-  }
-  .head{
-          display: flex;
-          justify-content: space-between;
-
-  }
-  ul{
+.content-page9{
     display: flex;
-
-  }
-
-
+    justify-content: space-between;
+    h2{
+       font-weight: 400;
+       margin: 0;
+       padding: 0;
+       border: 0;
+    }
+    .sub{
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
 }
-
-
-
-
-.footer {
-  background-color: $hfcolor;
-  
-
+.p9-main{
+    width: 66.049%;
+    img{
+        padding-bottom: 8px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }     
 }
+.tags{
+    width: 32.0987%;
+    .material-symbols-outlined{
+        font-size: 48px;
+        padding: 0;
+        padding-right: 8px;
+    }
+    h3{
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: $hfcolor;
+        padding-bottom: 4px;
+    }
+    span{
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: $hfcolor;
+        padding-right: 24px;
+        padding-bottom: 4px;
+    }
+}
+.container2{
+    width: 66.049%;
+}
+.share{
+    display: flex;
+    border-bottom: 1px solid #707070;
+    a{
+        text-decoration: none;
+        color: #0A0A0A;
+    }
+    li{
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 700;
+        padding-bottom: 16px;
+        padding-right: 16px;
+    }
+    img{
+        width: 24px;
+    }
+}
+.page-updown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    .p-up{
+        padding-right: 8px;
+    }
+    .p-down{
+        padding-left: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    p{
+      margin: 0;
+    }
+}
+@media (max-width: 992px) {
+    .subtitle2{
+        margin-top: 8px;
+    }
+    .content-page9{
+        .sub{
+            margin-bottom: 24px;
+        }
+    }
+    .p9-main{
+        width: 74.1379%;
+        margin-bottom: 16px;
+        img{
+            padding-bottom: 16px;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+    }
+    .tags{
+        width: 22.413%;
+        .material-symbols-outlined{
+            font-size: 24px;
+            padding: 0;
+        }
+        h3{
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+        span{
+            font-size: 16px;
+            padding-right: 16px;
+            padding-bottom: 0;
+        }
+    }
+    .container2{
+        width: 100%;
+    }
+}
+@media (max-width:767px) {
+    .hdmenu{
+        display: block;
+        .container{
+            padding: 12px 12px;
+        }
+        .material-symbols-outlined{
+            display: none;
+        }
+        ul{
+            width: 100%;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+    .subtitle2{
+        margin-top: 16px;
+        .red{
+            padding-right: 16px;
+            font-size: 16px;
 
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $hfcolor;
-  }
+        }
+    }
+    .content-page9{
+        h2{
+            font-size: 24px;
+        }
+        .sub{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+    .p9-main{
+        width: 100%;
+        margin-bottom: 48px;
+        img{
+            padding-bottom: 8px;
+        }
+        p{
+            margin-bottom: 16px;
+        }
+    }
+    .tags{
+        display: none;
+    }
+    .share{
+        display: none;
+    }
+    .page-updown{
+        display: none;
+    }
 }

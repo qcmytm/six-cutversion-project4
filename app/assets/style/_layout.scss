@@ -1,0 +1,243 @@
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    
+}
+
+.header {
+    background-color: $hfcolor;
+    
+    a{
+      width: 6.172%;
+      padding: 15px 0;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 39.5%;
+      
+    }
+    li{
+      padding: 25px 0;
+      a{
+      
+        color:$hffzcolor;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 25px 0;
+        text-decoration:none;
+        
+      }
+    }
+   
+  
+  }
+  
+  .footer {
+    background-color: $hfcolor;
+    .menulist{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 48px;
+      padding-bottom: 24px;
+    }
+    .menu{
+      width: 35.8%;
+      display: flex;
+      justify-content: space-between;
+    }
+    a{
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 24px 0;
+      color:$hffzcolor;
+      text-decoration:none;
+    }
+    .img-fbigline{
+      width: 16.049%;
+      display: flex;
+      justify-content: space-between;
+      li{
+        width: 23.076%;
+      }
+    }
+    .phone{
+      display: flex;
+      color: $hffzcolor;
+      margin-bottom: 8px;
+    p{
+      font-size: 36px;
+      line-height: 1.5;
+    }
+  
+    }
+    .mail{
+      display: flex;
+      color: $hffzcolor;
+      padding-bottom: 32px;
+      border-bottom: 1px solid $hffzcolor;
+      p{
+        font-size: 36px;
+        line-height: 1.5;
+      }
+  
+    }
+    .material-symbols-outlined {
+      font-size: 48px;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+      padding-right: 16px;
+      }
+      .later{
+        display: flex;
+        justify-content: space-between;
+        color: $hffzcolor;
+        P{
+          font-size: 16px;
+          line-height: 1.3125;
+          padding: 32px 0;
+        }
+        span{
+          margin-right: 48px;
+        }
+      }
+  }
+  
+  @media (max-width:992px) 
+  {
+  
+    .container{
+      max-width: 720px;
+      
+    }
+    .header{
+      a{
+        width: 11.49%;
+  
+      }
+      ul{
+        width: 73.5%;
+    
+      }
+    }
+    .footer{
+      .menu{
+        width: 66.66%;
+      }
+      .img-fbigline{
+        width: 21.839%;
+        li{
+          width: 26.315%;
+        }
+      }
+      .later{
+        p{
+          padding-bottom: 40px;
+        }
+      }
+      
+    }
+   
+  
+  
+  
+  }
+  
+  @media (max-width:767px) {
+  
+    .container{
+      max-width: 372px;
+    }
+    .header{
+      text-align: center;
+      a{
+        width: 80px;
+        margin: 0 auto;
+        
+      }
+      .container{
+        max-width: 767px;
+        flex-wrap: wrap;
+        padding: 0 0;
+    
+      }
+      ul{
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      li{
+        width: 50%;
+        padding: 11px 0;
+        border: 1px solid $hffzcolor;
+        a{
+          font-size: 16px;
+          padding: 11px 0;
+        }
+      }
+    }
+    .footer{
+      .menu{
+        display: none;
+      }
+      .menumobile{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-top: 24px;
+        padding-bottom: 8px;
+      }
+      .menulist{
+        width: 25.287%;
+        padding: 0;
+      }
+      .img-fbigline{
+        width: 100%;
+        li{
+          width: 27.27%;
+        }
+      }
+      .phone{
+        width: 37.931%;
+        margin: 0;
+        p{
+          font-size: 16px;
+        }
+      }
+      .mail{
+        padding-bottom: 24px;
+        p{
+          font-size: 16px;
+        }
+      }
+      .material-symbols-outlined{
+        font-size: 24px;
+        padding-right: 8px;
+      }
+      .later{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        P{
+          line-height: 1.5;
+          padding: 0;
+        }
+        span{
+          margin-right: 0;
+          display: block;
+          margin: 8px 0;
+        }
+      }
+    }
+  }

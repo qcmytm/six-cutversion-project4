@@ -52,3 +52,15 @@ img {
   height: auto;
   vertical-align:top;
 }
+
+html {
+    box-sizing: border-box;
+
+  }
+  *,*::before,*::after {
+    box-sizing: inherit;
+  }
+  body{
+	font-family:'Roboto', sans-serif,
+  	'Noto Sans TC', sans-serif;
+	}	

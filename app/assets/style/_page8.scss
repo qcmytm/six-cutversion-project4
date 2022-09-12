@@ -1,0 +1,218 @@
+h1{
+    display: none;
+}
+.hdmenu{
+    background: $hdcolor;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+    }
+    ul{
+        width: 37.345%;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        font-size: 20px;
+        line-height: 1.5;
+        text-decoration:none;
+        color: $hffzcolor;
+        font-weight: 700;
+    }
+    .material-symbols-outlined {
+        display: block;
+        font-size: 40px;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+}
+h2{
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    border-left: 8px solid #9F1213;
+}
+.content-page8{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contentp8-images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    img{
+        width: 49.074%;
+    }
+}
+.main{
+    width: 49.074%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    h3{
+        font-size: 32px;
+        line-height: 1.5;
+        color:$hdcolor;
+    }
+    .subtitle{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    .date{
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    p{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #555555;
+    }
+    .more{
+        font-size: 36px;
+        line-height: 1.5;
+        color:$hdcolor;
+        font-weight: 900;
+    }    
+}
+.numbermeunlist{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 90px;
+    a{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #555555;
+        text-decoration:none;
+        padding: 12px 16px;
+        border-left: 1px solid #555555;
+        border-top: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+        &:hover{
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }
+    .number-up{
+        a{
+            &:hover{
+                background: #F2F2F2;
+                color: #555555;
+            }
+        }
+    }
+    .number-down{
+        a{
+            border-right: 1px solid #555555;
+            &:hover{
+                background: #F2F2F2;
+                color: #555555;
+            }
+        }
+    }
+}
+@media (max-width:992px) 
+  {
+    .hdmenu{
+        ul{
+            width: 69.54%;
+        }
+    }
+    h2{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .contentp8-images{
+        margin-bottom: 24px;
+        
+        img{
+            width: 48.275%;
+            height: 208px;
+        }
+    }
+    .main{
+        width: 48.275%;
+        h3{
+            font-size: 24px;
+        }
+        .subtitle{
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        p{
+            font-size: 16px;
+            -webkit-line-clamp:6;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            overflow:hidden; 
+            text-overflow: ellipsis;
+        }
+        .more{
+            display: none;
+        }
+    }
+    .numbermeunlist{
+        margin-top: 67px;
+    }
+}    
+@media (max-width:767px) {
+    .hdmenu{
+        display: none;
+    }
+    h2{
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+    .contentp8-images{
+        display: block;
+        img{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+    .main{
+        width: 100%;
+        display: block;
+        p{
+            display: none;
+        }
+    }
+    .subtitle p{
+        display: block;
+    }
+    .numbermeunlist{
+        a{
+            font-size: 16px;
+            padding: 12px 15px;
+        }
+        .number-up{
+            a{
+                padding: 12px 12px; 
+            }
+        }
+        .number-down{
+            a{
+                padding: 12px 12px;
+            }
+        }
+    }
+}
+
